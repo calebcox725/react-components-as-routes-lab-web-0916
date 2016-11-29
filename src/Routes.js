@@ -8,9 +8,12 @@ import Home from './components/Home'
 import Movies from './components/Movies'
 
 const Routes = (
-    <Route path="/" component={App}>
-        {/* routes go here */}
-    </Route>
+  <Route path="/" component={App}>
+    <IndexRoute component={Home}/>
+    <Route path="movies" component={Movies}/>
+    <Route path="directors" component={Directors}/>
+    <Route path="actors" component={Actors}/>
+  </Route>
 )
 
 

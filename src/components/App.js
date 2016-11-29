@@ -3,11 +3,12 @@ import React from 'react'
 import NavBar from './NavBar'
 
 const App = (props) => {
-    return (
-        <div>
-            {/* code goes here */}
-        </div>
-    )
+  return (
+    <div>
+      <NavBar/>
+      {props.children}
+    </div>
+  )
 }
 
 module.exports = App
